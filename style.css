@@ -1,12 +1,12 @@
 :root {
-    --terra:       #8B4A2B;
-    --terra-dark:  #5C2E14;
-    --dourado:     #C9973A;
-    --creme:       #F7F0E3;
-    --creme2:      #EDE2CC;
-    --text:        #2C1810;
-    --text-light:  #7A5540;
-    --white:       #FFFFFF;
+    --terra:       #d7e41a;
+    --terra-dark:  #dce77a;
+    --dourado:     #252523;
+    --creme:       #2b2b28;
+    --creme2:      #ebe3da;
+    --text:        #bda9a9;
+    --text-light:  #e6f23c;  
+    --white:       #3c3a3a;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -19,6 +19,8 @@
     font-size: 15px;
     line-height: 1.6;
   }
+
+  
 
   /* ── HERO ── */
   .hero {
@@ -49,7 +51,7 @@
     font-style: italic;
     font-weight: 400;
     font-size: 0.55em;
-    color: rgba(247,240,227,0.6);
+    color: rgba(83, 76, 76, 0.6);
     margin-top: 8px;
     letter-spacing: 1px;
   }
@@ -68,7 +70,7 @@
     z-index: 50;
     background: var(--white);
     border-bottom: 1px solid var(--creme2);
-    box-shadow: 0 1px 8px rgba(44,24,16,0.06);
+    box-shadow: 0 1px 8px rgba(215, 227, 54, 0.06);
   }
 
   .nav-inner {
@@ -145,7 +147,7 @@
   }
 
   .menu-item:hover {
-    box-shadow: 0 4px 16px rgba(44,24,16,0.09);
+    box-shadow: 0 4px 16px rgba(221, 209, 204, 0.09);
   }
 
   .item-img {
@@ -227,14 +229,14 @@
 
   .menu-item.destaque {
     border-left: 3px solid var(--dourado);
-    background: #fffdf8;
+    background: #3c3b39;
   }
 
   /* ── SEPARADOR ── */
   .sep {
     text-align: center;
     padding: 8px 0 0;
-    color: rgba(139,74,43,0.2);
+    color: rgba(194, 186, 182, 0.2);
     font-size: 18px;
     letter-spacing: 8px;
   }
@@ -268,10 +270,10 @@
     margin-top: 14px;
   }
 
-  /* ── FOOTER ── */
+  /* Ultima frase do cardápio*/
   footer {
     background: var(--terra-dark);
-    color: rgba(247,240,227,0.6);
+    color: rgba(32, 29, 23, 0.6);
     text-align: center;
     padding: 40px 24px;
   }
@@ -288,13 +290,41 @@
 
   footer .horario {
     display: inline-block;
-    border: 1px solid rgba(201,151,58,.4);
+    border: 1px solid rgba(246, 241, 232, 0.4);
     border-radius: 4px;
     padding: 8px 20px;
     font-size: 13px;
     color: var(--creme);
   }
 
+
+  /* ── LOCALIZADO DENTRO DE .ITEM-INFO ── */
+.item-tag {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--terra); /* Alterado para o amarelo principal */
+  font-weight: 700;    /* Aumentei o peso para destacar mais */
+  margin-bottom: 3px;
+}
+
+/* ── LOCALIZADO ABAIXO DO PREÇO ── */
+.badge {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--terra); /* Alterado para o amarelo principal */
+  text-align: right;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+/* ── BORDA DO CARD EM DESTAQUE ── */
+.menu-item.destaque {
+  border-left: 3px solid var(--terra); /* Borda amarela em vez de cinza */
+  background: #3c3b39;
+}
   /* ── MOBILE ── */
   @media (max-width: 540px) {
     .menu-item {
